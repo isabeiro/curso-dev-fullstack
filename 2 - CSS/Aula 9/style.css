@@ -1,0 +1,36 @@
+body {
+    background: rgb(226 240 248);
+    font-family: helvetica, arial;
+}
+
+p {
+    color: rgb(12, 12, 12);
+}
+
+
+.foto-principal {
+    width: 250px;
+    border: 3px solid #b9bdff; 
+    border-radius: 50%;
+
+    margin: 30px; 
+
+    /*padding: 20px;*/
+
+    box-shadow: 2px 2px 10px black;
+    /*box-shadow: sombra horizontal sombra vertical desfoque e cor*/
+    
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0%;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+h2{
+    margin-top: 0%;
+    font-weight: 100;
+    font-size: 22px;
+}

@@ -1,0 +1,24 @@
+body {
+    background: rgb(161, 161, 161);
+}
+
+p {
+    color: rgb(12, 12, 12);
+}
+
+
+.foto-principal {
+    width: 250px;
+    border: 3px solid whitesmoke; 
+    border-radius: 50%;
+    /*
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    Igual - o primeiro é um shorthand
+    border-radius: 10% 20% 30% 40%; cada valor de um canto da imagem, em sentido horário
+    */
+    
+}
+
+
