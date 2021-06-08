@@ -1,0 +1,532 @@
+
+:root {
+    --color-primary: #ff6c47;
+    --color-secondary: #FA8072;
+    --color-secondary-light: #f7bfb9;
+    --color-terciary: rgb(250,128,114,0.6);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.home-background {
+    background-image: url(../images/pastries.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+/****************
+   HOME-HEADER
+****************/
+
+.header {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header nav li {
+    list-style: none;
+    padding: 60px 20px 20px 20px;
+    background-color: var(--color-secondary-light);
+}
+
+.header nav li img {
+    width: 100px;
+}
+
+.header nav li a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0 8px white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.header nav li a:hover {
+    border-top: 3px solid var(--color-primary);
+}
+
+
+
+
+/****************
+   HOME-BANNER
+****************/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 200px;
+    margin: auto;
+}
+
+.banner h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 100px;
+    letter-spacing: 6px;
+    color: var(--color-primary);
+    text-shadow: 0 0 15px black;
+}
+
+.banner span {
+    font-size: 30px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+/**********
+   ABOUT
+**********/
+
+.about {
+    height: 100vh;
+    background-image: url(../images/cupcakes-690040_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: relative;
+    top: -30px;
+    background-color: var(--color-terciary);
+    height: 110vh;
+}
+
+.about .overlay h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+.about .overlay span {
+    padding: 0 50px;
+    display: flex;
+}
+
+
+
+/************
+   PRODUCT
+************/
+
+.product {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-secondary-light);
+}
+
+.product h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-primary);
+    text-shadow: 0 0 2px black;
+}
+
+.product .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product .boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin: auto 0;
+}
+
+.product .boxes span {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.product .boxes img {
+    width: 250px;
+    border: 5px solid var(--color-secondary);
+    border-radius: 3px;
+}
+
+
+
+/****************
+   APPOINTMENT
+****************/
+
+.appointment {
+    height: 100vh;
+    background-image: url(../images/brooke-lark-V4MBq8kue3U-unsplash.jpg);
+    background-size: cover;
+}
+
+.appointment h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .personal-data .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+    padding: 50px 0 30px 0;
+}
+
+.appointment .personal-data .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 0 0 5px white;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.appointment .personal-data .input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary-light);
+}
+
+.appointment textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary-light);
+    height: 300px;
+}
+
+.appointment button {
+    height: 30px;
+    width: 60px;
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+
+
+/****************
+   LOCATION
+****************/
+
+.location {
+    height: 100vh;
+    background-color: var(--color-secondary-light);
+    
+}
+
+.location .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location iframe {
+    height: 100vh;
+}
+
+.location .info-wrapper {
+    background-color: var(--color-terciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 108vh;
+    padding: 100px 50px;
+    position: relative;
+    top: -30px;
+}
+
+.location .info-wrapper .text {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.location .info-wrapper .text span {
+    display: block;
+}
+
+
+
+/************
+   FOOTER
+************/
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+/*********************
+   MAX-WIDTH: 1201PX
+**********************/
+
+@media (max-width:1201px) {
+    .container {
+        width: 700px;
+        height: fit-content;
+    }
+
+    .header nav {
+        background-color: var(--color-secondary-light);
+        flex-direction: column;
+        align-items: flex-start;
+        height: 106px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .header nav li {
+        padding: 0;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .product .box {
+        height: none;
+        flex-direction: column;
+    }
+}
+
+
+
+/***********************
+    MIN-WIDTH: 1001PX
+    MAX-WIDTH: 1200PX
+************************/
+
+@media (min-width: 1001px) and (max-width:1200px) {
+    .container {
+        width: 700px;
+        height: fit-content;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .product {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .product h2 {
+        padding-top: 50px;
+    }
+
+    .product .boxes {
+        flex-direction: row;
+    }
+
+    .product .boxes:last-of-type {
+        padding-bottom: 50px;
+    }
+
+    .product .boxes span {
+        text-align: center;
+        margin: auto 10px;
+    }
+}
+
+
+
+
+/***********************
+    MIN-WIDTH: 601PX
+    MAX-WIDTH: 1000PX
+************************/
+
+@media  (min-width: 601px) and (max-width: 1000px) {
+    .container {
+        width: 500px;
+        height: fit-content;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .product {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .product h2 {
+        padding-top: 50px;
+    }
+
+    .product .boxes {
+        flex-direction: row;
+    }
+
+    .product .boxes:last-of-type {
+        padding-bottom: 50px;
+    }
+
+    .product .boxes span {
+        text-align: center;
+        margin: auto 10px;
+    } 
+
+    .appointment form {
+        padding: 15px 0;
+    }
+
+    .location .container {
+        flex-direction: column;
+    }
+
+    .location .info-wrapper {
+        height: 45vh;
+        padding: 50px 20px;
+    }
+
+    .location iframe {
+        width: 500px;
+        height: 50vh;
+    }
+}
+
+
+
+/***********************
+    MAX-WIDTH: 600PX
+************************/
+
+@media  (max-width: 600px) {
+    .container {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .header nav {
+        height: 200px;
+    }
+
+    .banner {
+        padding-top: 100px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .banner span {
+        text-shadow: 0 0 10px white;
+    }
+
+    .about {
+        height: 150vh;
+    }
+
+    .about .overlay {
+        height: 160vh;
+    }
+
+    .product {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .product h2 {
+        padding-top: 50px;
+    }
+
+    .product .boxes {
+        margin: auto;
+    }
+
+    .product .boxes:last-of-type {
+        padding-bottom: 50px;
+    }
+ 
+    .product .boxes span {
+        text-align: center;
+        margin: auto 10px;
+    }
+    
+    .appointment h2 {
+        padding-top: 30px;
+        text-shadow: 0 0 10px white;
+    }
+
+    .appointment form {
+        padding: 15px 0;
+    }
+
+    .appointment .personal-data {
+        flex-direction: column;
+    }
+
+    .appointment .personal-data .input-wrapper {
+        padding: 0px 0 10px 0;
+    }
+
+    .location .container {
+        flex-direction: column;
+    }
+
+    .location .info-wrapper {
+        height: 45vh;
+        padding: 50px 20px;
+    }
+
+    .location iframe {
+        width: 300px;
+        height: 50vh;
+        justify-content: center;
+    }
+}
